@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf5f0">
+  <meta name="description" content="A little floral corner for reviews and ways to connect.">
+  <title>forsales — made with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="petal petal-one" aria-hidden="true">✿</div>
+  <div class="petal petal-two" aria-hidden="true">❀</div>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="forsales home"><span class="brand-mark">❀</span><span>forsales</span></a>
+    <a class="header-link" href="#contact">say hello <span>↗</span></a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">A LITTLE SPACE MADE WITH LOVE</p>
+      <h1>Lovely things,<br><em>lovely people.</em></h1>
+      <p class="hero-copy">A little corner for kind words, happy experiences and staying connected. ♡</p>
+      <a class="button button-primary" href="#reviews">read our reviews <span>↓</span></a>
+      <div class="hero-flower" aria-hidden="true">✿</div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="section-heading">
+        <div><p class="eyebrow">KIND WORDS</p><h2>Sweet reviews <span>♡</span></h2></div>
+        <span class="section-note">from lovely customers</span>
+      </div>
+      <div class="review-summary card">
+        <div class="summary-stars" aria-label="Five stars">★★★★★</div>
+        <p>Every kind word means the world to us.</p>
+      </div>
+      <div id="review-list" class="review-list" aria-live="polite">
+        <article class="empty-state card"><span class="empty-flower">✿</span><p>Our review garden is waiting to bloom.</p><small>Be the first to leave a little note.</small></article>
+      </div>
+
+      <form id="review-form" class="review-form card">
+        <div class="form-heading"><span class="form-flower">❀</span><div><h3>Leave a little love</h3><p>Your experience makes our day.</p></div></div>
+        <label for="customer-name">Your name</label>
+        <input id="customer-name" name="customer_name" maxlength="60" placeholder="How should we call you?" required>
+        <label>Your rating</label>
+        <div class="rating-picker" role="radiogroup" aria-label="Choose a rating">
+          <input type="radio" name="rating" id="rating-5" value="5" checked><label for="rating-5" aria-label="5 stars">★</label>
+          <input type="radio" name="rating" id="rating-4" value="4"><label for="rating-4" aria-label="4 stars">★</label>
+          <input type="radio" name="rating" id="rating-3" value="3"><label for="rating-3" aria-label="3 stars">★</label>
+          <input type="radio" name="rating" id="rating-2" value="2"><label for="rating-2" aria-label="2 stars">★</label>
+          <input type="radio" name="rating" id="rating-1" value="1"><label for="rating-1" aria-label="1 star">★</label>
+        </div>
+        <label for="review-text">Your review</label>
+        <textarea id="review-text" name="review_text" rows="4" maxlength="1000" placeholder="Tell us about your experience..." required></textarea>
+        <button class="button button-primary submit-button" type="submit">send my review <span>♡</span></button>
+        <p id="form-message" class="form-message" role="status">Reviews are submitted for approval before appearing publicly.</p>
+      </form>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <div><p class="eyebrow">LET'S KEEP IN TOUCH</p><h2>Around the web <span>✿</span></h2></div>
+      </div>
+      <div id="bio-links" class="bio-links card">
+        <a class="bio-link" href="https://line.me/" target="_blank" rel="noopener noreferrer"><span class="link-icon">♡</span><span><strong>LINE</strong><small>Come say hello</small></span><b>↗</b></a>
+        <a class="bio-link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><span class="link-icon">◎</span><span><strong>Instagram</strong><small>A little glimpse of our world</small></span><b>↗</b></a>
+        <a class="bio-link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><span class="link-icon">f</span><span><strong>Facebook</strong><small>Find us on Facebook</small></span><b>↗</b></a>
+        <a class="bio-link" href="https://x.com/" target="_blank" rel="noopener noreferrer"><span class="link-icon">𝕏</span><span><strong>X / Twitter</strong><small>Follow our updates</small></span><b>↗</b></a>
+      </div>
+      <p class="contact-hint">Contact links are sample placeholders and can be personalized later.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>✿</span><p>made with care & a little bit of magic</p><small>© <span id="year"></span> forsales</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
